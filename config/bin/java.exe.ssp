@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ssprotect>
+	<base_info>
+		<app>Virbox Protector Trial</app>
+		<version>1.5.0.10808</version>
+	</base_info>
+	<file>
+		<path>java.ssp.exe</path>
+	</file>
+	<option>
+		<import>1</import>
+		<zip>1</zip>
+		<encrypt>1</encrypt>
+	</option>
+	<plugin>
+		<anti enable="0">
+			<x86 file="anti_x86.spd"></x86>
+			<x64 file="anti_x64.spd"></x64>
+			<option>
+				<anti_hbp type="bool">0</anti_hbp>
+				<anti_mbp type="bool">0</anti_mbp>
+				<enable_crc type="bool">0</enable_crc>
+			</option>
+		</anti>
+		<ds enable="1">
+			<x86 file="ss_res_protect_x86.dll"></x86>
+			<x64 file="ss_res_protect_x64.dll"></x64>
+			<option>
+				<pwd type="password">1C18D698676942C93385F1B19947BEBA</pwd>
+			</option>
+		</ds>
+	</plugin>
+	<function>
+		<SENSENODEFUNC0 type="function" name="SENSE00008dae">
+			<flags>8</flags>
+		</SENSENODEFUNC0>
+	</function>
+</ssprotect>
